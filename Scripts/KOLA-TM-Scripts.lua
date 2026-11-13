@@ -1,8 +1,9 @@
 env.info('*** 441 SCRIPTS START *** ')
 -- ----------------------------------------------------------- --
 -- KOLA 2026 TM SCRIPTS
+-- TODO: Fix Airboss
 -- CHANGES: 
---         071126 - B 3 (release)
+--         111126 - V1 (release)
 --         XXXX26 -
 -- ----------------------------------------------------------- --
 -- Others Menu --
@@ -30,7 +31,7 @@ local fsAWACS=FLIGHTGROUP:New("Focus")
 fsAWACS:SetDefaultCallsign(CALLSIGN.AWACS.Focus, 7)
 fsAWACS:AddMission(auftragAWACS)
 
--- CC-130T ARCO31  TCN 66 - 14000 266.0MHz BTN 7
+-- CC-130T ARCO31  TCN 66 - 9000 266.0MHz BTN 7
 local acro3Tanker=AUFTRAG:NewTANKER(zoneTanker:GetCoordinate(), 9000, 271, 200, 10)
 	acro3Tanker:SetTACAN(66, "ARC")
 	acro3Tanker:SetRadio(266)
